@@ -28,11 +28,7 @@ template = renderHtml $ do
     H.title "Abanico"
     link ! rel "icon" ! type_ "image/png" ! href "favicon.png"
   body $ do
-    p "Main"
-    ul $ do
-      mapM (\ (h,t) -> li ( a ! href h $ t)) links
-      pure ()
-    p "Low traffic"
-    ul $ li $ a ! href "https://www.jobsinnew.tech/langs/haskell/" $ "Jobs in new tech -- Haskell"
+    mapM (\ (h,t) -> a ! href h $ t) links
+    pure ()
 
 main = putStrLn template
