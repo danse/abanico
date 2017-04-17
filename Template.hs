@@ -27,6 +27,7 @@ template = renderHtml $ do
   H.head $ do
     H.title "Abanico"
     link ! rel "icon" ! type_ "image/png" ! href "favicon.png"
+    link ! rel "stylesheet" ! href "style.css"
   body $ do
     mapM (\ (h,t) -> a ! href h $ t) links
     pure ()
