@@ -8,7 +8,7 @@ import Control.Monad (mapM)
 links = [("https://www.glassdoor.com", "Glassdoor"),
          ("https://remotelist.io/", "Remote List"),
          ("https://www.bitwage.com", "Bitwage"),
-         ("http://www.cloudpeeps.com/", "CloudPeeps - not many programmers yet, apparentl"),
+         ("http://www.cloudpeeps.com/", "CloudPeeps"),
          ("https://www.workingnomads.co/jobs", "Working Nomads"),
          ("https://www.upwork.com/ab/find-work/", "Upwork"),
          ("https://angel.co/job-collections/remote", "Angel Remote"),
