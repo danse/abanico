@@ -5,7 +5,8 @@ import Text.Blaze.Html5.Attributes
 import Text.Blaze.Html.Renderer.Pretty (renderHtml)
 import Control.Monad (mapM)
 
-links = [("https://www.glassdoor.com", "Glassdoor"),
+links = [("https://remote.com/jobs", "Remote"),
+         ("https://www.glassdoor.com", "Glassdoor"),
          ("https://remotelist.io/", "Remote List"),
          ("https://www.bitwage.com", "Bitwage"),
          ("http://www.cloudpeeps.com/", "CloudPeeps"),
