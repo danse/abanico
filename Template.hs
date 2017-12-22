@@ -5,26 +5,27 @@ import Text.Blaze.Html5.Attributes
 import Text.Blaze.Html.Renderer.Pretty (renderHtml)
 import Control.Monad (mapM)
 
-links = [("https://news.ycombinator.com/jobs", "Hacker News Jobs"),
-         ("https://news.ycombinator.com", "Hacker News"),
-         ("https://remote.com/jobs", "Remote"),
-         ("https://www.glassdoor.com", "Glassdoor"),
-         ("https://remotelist.io/", "Remote List"),
-         ("https://www.bitwage.com", "Bitwage"),
-         ("http://www.cloudpeeps.com/", "CloudPeeps"),
-         ("https://www.workingnomads.co/jobs", "Working Nomads"),
-         ("https://www.upwork.com/ab/find-work/", "Upwork"),
-         ("https://angel.co/job-collections/remote", "Angel Remote"),
-         ("https://stackoverflow.com/jobs/remote-developer-jobs", "* Stack overflow"),
-         ("https://github.com/engineerapart/TheRemoteFreelancer", "The Remote Freelancer (list of links)"),
-         ("https://twitter.com/search?f=tweets&q=%20%23remote%20%23job&src=typd", "Twitter #remote #job"),
-         ("https://twitter.com/search?f=tweets&q=remote javascript", "Twitter remote javascript"),
-         ("https://jobspresso.co/", "Jobspresso"),
-         ("https://gigster.com/", "Gigster"),
-         ("https://www.askdomino.com/", "Domino"),
-         ("http://facebook.com", "Facebook"),
-         ("http://linkedin.com", "Linkedin"),
-         ("http://hashnode.com", "Hashnode")]
+links = [("https://workaline.com/?search=technical4", "workaline"),
+         ("https://news.ycombinator.com/jobs", "hacker news jobs"),
+         ("https://news.ycombinator.com", "hacker news"),
+         ("https://remote.com/jobs", "remote"),
+         ("https://www.glassdoor.com", "glassdoor"),
+         ("https://remotelist.io/", "remote list"),
+         ("https://www.bitwage.com", "bitwage"),
+         ("http://www.cloudpeeps.com/", "cloudpeeps"),
+         ("https://www.workingnomads.co/jobs", "working nomads"),
+         ("https://www.upwork.com/ab/find-work/", "upwork"),
+         ("https://angel.co/job-collections/remote", "angel remote"),
+         ("https://stackoverflow.com/jobs/remote-developer-jobs", "* stack overflow"),
+         ("https://github.com/engineerapart/TheRemoteFreelancer", "the remote freelancer (list of links)"),
+         ("https://twitter.com/search?f=tweets&q=%20%23remote%20%23job&src=typd", "twitter #remote #job"),
+         ("https://twitter.com/search?f=tweets&q=remote javascript", "twitter remote javascript"),
+         ("https://jobspresso.co/", "jobspresso"),
+         ("https://gigster.com/", "gigster"),
+         ("https://www.askdomino.com/", "domino"),
+         ("http://facebook.com", "facebook"),
+         ("http://linkedin.com", "linkedin"),
+         ("http://hashnode.com", "hashnode")]
 
 template = renderHtml $ do
   H.head $ do
