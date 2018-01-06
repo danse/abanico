@@ -5,7 +5,7 @@ import Text.Blaze.Html5.Attributes
 import Text.Blaze.Html.Renderer.Pretty (renderHtml)
 import Control.Monad (mapM)
 
-links = [("d3 contracting", "https://lack.com/messages/C082ZDBU0/"),
+links = [("d3 contracting", "https://d3js.slack.com/messages/C082ZDBU0/"),
          ("workaline", "https://workaline.com/?search=technical4"),
          ("hacker news jobs", "https://news.ycombinator.com/jobs"),
          ("hacker news", "https://news.ycombinator.com"),
