@@ -5,6 +5,10 @@ import Text.Blaze.Html5.Attributes
 import Text.Blaze.Html.Renderer.Pretty (renderHtml)
 import Control.Monad (mapM)
 
+favorites = [
+         ("stack overflow", "https://stackoverflow.com/jobs/remote-developer-jobs")
+            ]
+
 links = [("d3 contracting", "https://d3js.slack.com/messages/C082ZDBU0/"),
          ("workaline", "https://workaline.com/?search=technical4"),
          ("hacker news jobs", "https://news.ycombinator.com/jobs"),
@@ -17,7 +21,6 @@ links = [("d3 contracting", "https://d3js.slack.com/messages/C082ZDBU0/"),
          ("working nomads", "https://www.workingnomads.co/jobs"),
          ("upwork", "https://www.upwork.com/ab/find-work/"),
          ("angel remote", "https://angel.co/job-collections/remote"),
-         ("* stack overflow", "https://stackoverflow.com/jobs/remote-developer-jobs"),
          ("the remote freelancer (list of links)", "https://github.com/engineerapart/TheRemoteFreelancer"),
          ("twitter #remote #job", "https://twitter.com/search?f=tweets&q=%20%23remote%20%23job&src=typd"),
          ("twitter remote javascript", "https://twitter.com/search?f=tweets&q=remote javascript"),
@@ -34,7 +37,7 @@ template = renderHtml $ do
     link ! rel "icon" ! type_ "image/png" ! href "favicon.png"
     link ! rel "stylesheet" ! href "style.css"
   body $ do
-    mapM (\ (t,h) -> a ! href h $ t) links
+    mapM (\ (t,h) -> a ! href h $ t) (favorites ++ links)
     pure ()
 
 main = putStrLn template
