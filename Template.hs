@@ -9,7 +9,8 @@ favorites = [
          ("stack overflow", "https://stackoverflow.com/jobs/remote-developer-jobs")
             ]
 
-links = [("d3 contracting", "https://d3js.slack.com/messages/C082ZDBU0/"),
+links = [("hashtagnomads jobs", "https://nomadlist.slack.com/messages/C02SU0WLE"),
+         ("d3 contracting", "https://d3js.slack.com/messages/C082ZDBU0/"),
          ("workaline", "https://workaline.com/?search=technical4"),
          ("hacker news jobs", "https://news.ycombinator.com/jobs"),
          ("hacker news", "https://news.ycombinator.com"),
