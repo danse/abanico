@@ -1,2 +1,2 @@
-index.html: Template.hs
-	runhaskell $^ > $@
+index.html: Main.hs
+	stack build && stack exec abanico > $@
