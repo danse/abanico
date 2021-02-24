@@ -15,10 +15,18 @@ build-type:          Simple
 extra-source-files:  ChangeLog.md
 cabal-version:       >=1.10
 
+data-files: style.css,
+            favicon.png
+
 executable abanico
   main-is:             Main.hs
-  -- other-modules:       
+  other-modules:       Paths_abanico
   other-extensions:    OverloadedStrings
-  build-depends:       base >=4.8 && <4.9, blaze-html
+  build-depends:       base,
+                       blaze-html,
+                       scotty,
+                       containers,
+                       open-browser,
+                       text
   -- hs-source-dirs:      
   default-language:    Haskell2010
